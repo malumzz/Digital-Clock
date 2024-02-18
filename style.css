@@ -11,6 +11,10 @@ section{
     align-items: center;
     justify-content: center;
     background: #f0f8ff;
+    padding: 0 20px;
+}
+section.dark{
+    background: #24292d;
 }
 section .container{
     display: flex;
@@ -18,10 +22,28 @@ section .container{
     justify-content: center;
     height: 220px;
     width: 100%;
-    max-width: 550px;
+    max-width: 560px;
     background: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
+    position: relative;
+}
+section .container .icons i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    background: #24292d;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.container .icons i.fa-sun{
+    opacity: 0;
+    pointer-events: none;
+
 }
 section .container .time{
     display: flex;

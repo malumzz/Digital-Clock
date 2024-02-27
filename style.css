@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 section{
     min-height: 100vh;
@@ -10,12 +10,21 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f0f8ff;
+    background-image: url(wp2993713.webp);
     padding: 0 20px;
 }
 section.dark{
     background: #24292d;
 }
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #868686, 0 0 10px #868686, 0 0 15px #868686, 0 0 20px #fff;
+    }
+    100% {
+        box-shadow: 0 0 10px #868686, 0 0 20px #868686, 0 0 30px #868686, 0 0 40px #fff;
+    }
+}
+
 section .container{
     display: flex;
     align-items: center;
@@ -23,10 +32,10 @@ section .container{
     height: 220px;
     width: 100%;
     max-width: 560px;
-    background: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background: #4b4c4d;
     border-radius: 12px;
     position: relative;
+    animation: glow 0.5s infinite alternate;
 }
 section .container .icons i{
     position: absolute;
@@ -34,7 +43,7 @@ section .container .icons i{
     top: 20px;
     width: 30px;
     background: #24292d;
-    color: #fff;
+    color: #dfd8d8;
     text-align: center;
     line-height: 30px;
     border-radius: 50%;
@@ -54,6 +63,8 @@ section .container .time{
     display: flex;
     align-items: center;
     position: relative;
+    color: rgb(213, 215, 218);
+
 }
 .container .time .time-colon .am_pm{
     position: absolute;
@@ -62,6 +73,7 @@ section .container .time{
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1px;
+    color: rgb(74, 76, 78);
 }
 .time .time-colon .time-text{
     height: 100px;
@@ -70,9 +82,12 @@ section .container .time{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: #f0f8ff;
+    background: #5d6872;
     border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(219, 215, 215, 0.2);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 29px
 
 }
 .time .time-colon .colon{
@@ -85,7 +100,7 @@ section .container .time{
     margin: 0 10px;
 }
 .time .time-colon .time-text .text{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px
 }
